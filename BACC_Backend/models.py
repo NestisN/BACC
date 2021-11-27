@@ -150,7 +150,6 @@ class Employee(models.Model):
     employee_id = models.AutoField(primary_key=True)
     initialCode = models.CharField(max_length=2)
     title = models.CharField(choices=TITLE_TH, max_length=50)
-    code = models.IntegerField()
     name = models.CharField(max_length=255)
     surname = models.CharField(max_length=255)
     title_eng = models.CharField(max_length=50)
